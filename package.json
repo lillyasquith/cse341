@@ -1,0 +1,11 @@
+{
+  "name": "cse341",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "run": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

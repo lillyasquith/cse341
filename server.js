@@ -15,17 +15,28 @@
 
 
 
-
-// Contacts Project: Part 1 START HERE
+// Week 01 Project: Part 1 START HERE
 
 const express = require('express');
+const mongodb = require('./data/database');
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Import Routes
 app.use('/', require('./routes'));
 
-// Start the server
-app.listen(port, () => {
-    console.log(`Running on port ${port}`);
-  });
+
+mongodb.initDb((err) => {
+  if (err) {
+    console.log(err);
+  }
+  else {
+    // Start the server
+    app.listen(port, () => {
+      console.log(`Running on port ${port}`);
+    });
+  }
+
+});
+
+

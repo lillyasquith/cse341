@@ -18,7 +18,7 @@ content-type: application/json
 }
 
 ### PUT contact 
-PUT http://localhost:3000/contacts/663effe860e9ca3100bce19f HTTP/1.1
+PUT http://localhost:3000/contacts/663f0321bb900740ee93ffb5 HTTP/1.1
 content-type: application/json 
 
 {
@@ -31,5 +31,5 @@ content-type: application/json
 
 
 ### DELETE contact 
-DELETE http://localhost:3000/contacts/663effe860e9ca3100bce19f HTTP/1.1
+DELETE http://localhost:3000/contacts/663f0321bb900740ee93ffb5 HTTP/1.1
 content-type: application/json
